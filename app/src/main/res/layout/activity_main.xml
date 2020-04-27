@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3">
+    <TextView
+    android:layout_weight="1"
+        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:text="@string/orangeString"
+        android:background="@color/lightOrange"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/medium"></TextView>
+    <TextView
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:text="@string/greenString"
+        android:background="@color/lightGreen"
+        android:paddingTop="25dp"
+        android:paddingBottom="25dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textSize="@dimen/medium"></TextView>
+
+        <TextView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingTop="25dp"
+            android:paddingBottom="25dp"
+            android:textColor="@color/white"
+            android:text="@string/blueString"
+        android:background="@color/lightBlue"
+            android:textSize="@dimen/medium"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="3">
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="@dimen/medium"
+            android:text="@string/this_is_a_button"
+            android:background="@color/lightBlue"
+            android:textColor="@color/black"></Button>
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside"
+            android:src="@drawable/movieicon"></ImageView>
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textSize="20sp"
+            android:text="@string/this_is_a_green_button"
+            android:background="@color/lightGreen"
+            android:textColor="@color/black"></Button>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@color/orange">
+        <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="This is an Edit Text"
+        android:inputType="textCapWords"></EditText>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="This is also an edit text"
+            android:inputType="textCapWords"></EditText>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightBlue"
+        android:weightSum="2"
+        android:paddingLeft="5dp">
+
+        <CheckBox
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:textSize="@dimen/medium"
+
+            android:text="@string/notify_me"></CheckBox>
+
+        <Switch
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:checked="false"
+            android:layout_gravity="right"
+            android:text="@string/auto_backup"></Switch>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/lightBlue"
+        android:paddingLeft="5dp">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:isIndicator="false"
+            android:numStars="5"
+            android:rating="3.5"
+            android:stepSize="0.5"></RatingBar>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:background="@color/lightBlue"
+        android:paddingLeft="5dp">
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="50dp">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textSize="@dimen/medium"></RadioButton>
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textSize="@dimen/medium"></RadioButton>
+
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="medium">23sp</dimen>
+    <dimen name="side3rd">137dp</dimen>
+    <dimen name="middle3rd">136dp</dimen>
+
+</resources>
